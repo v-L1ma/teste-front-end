@@ -1,0 +1,25 @@
+.MarcaCard {
+    width: 13.1875em;
+    height: 13.1875em;
+    border-radius: 50%;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.0625em 0.0625em 1.25em rgba(0, 0, 0, 0.153);
+    cursor: pointer;
+
+    &:hover {
+        border: 0.125em solid rgba(128, 128, 128, 0.205);
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .MarcaCard{
+        width: 10em;
+        height: 10em;
+    }
+    
+}

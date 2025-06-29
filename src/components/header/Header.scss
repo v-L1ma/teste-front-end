@@ -1,0 +1,150 @@
+header {
+    padding: 0 5em;
+    margin: 0 auto;
+
+    #vantagens {
+        display: flex;
+        justify-content: space-between;
+        width: 47.75em;
+        margin: 0 auto;
+        padding: 0.375em 10%;
+
+        span {
+            display: flex;
+            gap: 1em;
+            font-size: 0.75em;
+            align-items: center;
+        }
+
+        strong {
+            color: #3019B2;
+        }
+    }
+
+    #barraDePesquisa {
+        display: flex;
+        border-top: 1px solid #F0F0F0;
+        border-bottom: 1px solid #F0F0F0;
+        padding: 0.9375em 0;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+            width: 8.6875em;
+            height: 2.58125em;
+        }
+
+        #barra {
+            display: flex;
+
+            input {
+                width: 39.375em;
+                height: 3em;
+                border-radius: 0.625em;
+                border: none;
+                background-color: #F6F5F2;
+                background-image: url(MagnifyingGlass.png);
+                background-repeat: no-repeat;
+                background-position: top 0.625em right 1.5em;
+                padding-left: 0.625em;
+            }
+        }
+
+        #botoes {
+            display: flex;
+            width: 13.5em;
+            height: 2em;
+            justify-content: space-between;
+            gap: 2em;
+
+            button {
+                height: 2em;
+                width: 2em;
+                appearance: none;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+            list-style: none;
+            color: #9F9F9F;
+            font-weight: 500;
+            justify-content: space-around;
+            padding: 0.625em 0;
+
+            li {
+                cursor: pointer;
+            }
+
+            .selected {
+                color: #3019B2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+  
+  header{
+
+    
+    padding: 0 1.5em;
+    margin: 0 auto;
+
+    #vantagens {
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.375em 0em;
+
+        span {
+            display: flex;
+            gap: 1em;
+            font-size: 0.75em;
+            align-items: center;
+        }
+
+        strong {
+            color: #3019B2;
+        }
+    }
+
+
+    #barraDePesquisa{
+        display: flex;
+        flex-wrap: wrap;
+
+        #logo{
+            order: 1;
+        }
+
+        #botoes{
+            order: 2;
+        }
+
+        #barra{
+            order: 3;
+            width: 100%;
+            margin-top: 1em;
+
+            input{
+                width: 100%;            
+                background-position: top 0.225em right 1.5em;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            flex-wrap: wrap;
+        }
+    }
+
+  }
+}

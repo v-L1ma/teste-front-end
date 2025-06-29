@@ -1,0 +1,40 @@
+#cardParceiro {
+    width: 49.375em;          
+    height: 25.625em;         
+    background-image: url(parceiro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.25em;    
+    padding: 2.76125em;       
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1em;
+
+    h1 {
+        font-size: 2.5em;     
+        color: white;
+    }
+
+    p {
+        color: white;
+        width: 12.5em;       
+    }
+
+    button {
+        width: 9em;
+        height: 3em;
+        background-color: #F7CA11;
+        appearance: none;
+        border: none;
+        border-radius: 0.375em;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #cardParceiro {        
+    height: 17.625em;
+    }
+}

@@ -1,0 +1,95 @@
+#heroSection {
+    background-image: url(banner.png);
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 4.875em 33.5625em 4.875em 5em;
+    background-color: #F7CA11;
+
+    div {
+        width: 51.5625em;
+        height: 16.0625em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 3em;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-weight: 400;
+
+            strong {
+                color: #F7CA11;
+            }
+        }
+
+        button {
+            width: 12.875em;
+            height: 3.125em;
+            appearance: none;
+            border: none;
+            background-color: #F7CA11;
+            border-radius: 0.3125em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+#parceirosSection {
+    display: flex;
+    justify-content: center;
+    margin: 5.625em 5em;
+    gap: 1em;
+}
+
+#marcasSection {
+    margin: 3.125em 5em;
+
+    #titulo {
+        font-size: 1.875em;
+        color: #3442b5;
+        text-align: center;
+    }
+
+    #lista {
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    #heroSection {
+        padding: 3em 1.5em;
+        height: fit-content;
+
+        div{
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+
+    #parceirosSection {
+        flex-wrap: wrap;
+        margin: 5.625em 1.5em;
+    }
+
+    #marcasSection {
+    margin: 3.125em 1em;
+
+        div{
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            gap: 1em;
+        }
+
+    #lista{
+        flex-wrap: wrap;
+    }
+    }
+    
+}

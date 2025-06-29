@@ -1,0 +1,62 @@
+.cardProduto {
+    width: 22em;
+    height: 34.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0.0625em 0.0625em 1.25em rgba(0, 0, 0, 0.203); // 1px 1px 20px
+    border-radius: 0.625em;
+    padding: 1.0625em 0.8125em;
+
+    img {
+        width: 17.38125em;
+        height: 14.25em;
+    }
+
+    p {
+        font-size: 0.9375em;
+        color: #3F3F40;
+        font-weight: 300;
+
+        strong {
+            font-weight: 400;
+            color: #3442B5;
+        }
+    }
+
+    h1 {
+        font-size: 1.25em;
+    }
+
+    h2 {
+        font-size: 1em;
+        color: #808080;
+        font-weight: 400;
+        text-decoration: line-through;
+    }
+
+    h3 {
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+
+    button {
+        appearance: none;
+        background-color: #3442B5;
+        height: 2.75em;
+        border: none;
+        border-radius: 0.25em;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .cardProduto {
+        width: 18em;
+        height: 30.25em;
+    }
+
+}
