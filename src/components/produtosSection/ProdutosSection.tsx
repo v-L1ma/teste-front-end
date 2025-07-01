@@ -99,8 +99,6 @@ function ProdutosSection({filtros, title}:ProdutosSectionProps){
                         <ProdutoCard 
                         titulo={produto.productName} 
                         preco={produto.price} 
-                        precoDesconto={produto.price} 
-                        precoParcelado={produto.price} 
                         imagePath={produto.photo}>
                         </ProdutoCard>
                     ))

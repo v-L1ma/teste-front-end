@@ -7,7 +7,7 @@ interface MarcaCardProps{
 function MarcaCard({imagePath}:MarcaCardProps){
     return(
         <div className="MarcaCard">
-            <img src={imagePath} alt="" />
+            <img src={imagePath} alt="Logo da marca" />
         </div>
     )
 }

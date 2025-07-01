@@ -5,12 +5,10 @@ import ModalProduto from "../modalProduto/modalProduto"
 interface ProdutoCardProps{
     titulo: string
     preco: number
-    precoDesconto: number
-    precoParcelado: number
     imagePath: string
 }
 
-function ProdutoCard({titulo,preco,precoDesconto,precoParcelado, imagePath}:ProdutoCardProps){
+function ProdutoCard({titulo,preco, imagePath}:ProdutoCardProps){
     const [isModalOpen,setIsModalOpen] = useState<boolean>(false)
 
     function openModal(){
@@ -28,8 +26,8 @@ function ProdutoCard({titulo,preco,precoDesconto,precoParcelado, imagePath}:Prod
                 <img src={imagePath} alt="Foto do produto" />
                 <p>{titulo}</p>
                 <h2>{formatarPreco(preco*1.07)}</h2>
-                <h1>{formatarPreco(precoDesconto)}</h1>
-                <h3>ou 2x de {formatarPreco(precoParcelado/2)} sem juros</h3>
+                <h1>{formatarPreco(preco)}</h1>
+                <h3>ou 2x de {formatarPreco(preco/2)} sem juros</h3>
                 <p><strong>Frete grátis</strong></p>
                 <button onClick={openModal}>COMPRAR</button>
             </div>

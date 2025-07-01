@@ -25,7 +25,7 @@ function ModalProduto({titulo, preco, imagePath, setIsModalOpen}:ModalProdutoPro
     }
 
     function formatarPreco(preco:number):string{
-        const valorFormatado = (preco*1.07).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        const valorFormatado = (preco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         return valorFormatado;
     }
 
@@ -36,7 +36,7 @@ function ModalProduto({titulo, preco, imagePath, setIsModalOpen}:ModalProdutoPro
                         <button onClick={fecharPopUp}>X</button>
                     </div>
                     <div id="container">
-                        <img src={imagePath} alt="" />
+                        <img src={imagePath} alt="Foto do produto" />
                         <div>
                             <h1>{titulo}</h1>
                             <h2>{formatarPreco(preco)}</h2>
